@@ -6,12 +6,12 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-const assistant = await openai.beta.assistants.create({
-  name: "Economics Tutor",
-  instructions: "This assistant will help you understand economics.",
-  tools: [{ type: "code_interpreter" }],
-  model: "gpt-3.5-turbo-1106",
-});
+// const assistant = await openai.beta.assistants.create({
+//   name: "Economics Tutor",
+//   instructions: "This assistant will help you understand economics.",
+//   tools: [{ type: "code_interpreter" }],
+//   model: "gpt-3.5-turbo-1106",
+// });
 
 // async function main() {
 //     const stream = await openai.chat.completions.create({
